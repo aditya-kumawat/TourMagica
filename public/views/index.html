@@ -1,0 +1,72 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <title>Tour Magica</title>
+  
+  <link rel="manifest" href="./manifest.json">
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  
+
+  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link href="../css/materialize.min.css" rel="stylesheet"/>
+  <link href="../css/styles.css" rel="stylesheet"/>
+  
+  <!-- JS libs -->
+  <script type="text/javascript" src="../javascripts/jquery.min.js"></script>
+  <script type="text/javascript" src="../javascripts/materialize.js"></script>
+
+</head>
+
+<body class="row">
+  <div class="main-content">
+    <div class="map-container">
+      <div id="map"></div>
+      <button class="btn get-a-tour waves-effect">Get a Tour</button>
+      <button class="btn get-info waves-effect">
+        <i class="material-icons">info</i>
+        <span class="hide-on-small-only">Get Info</span>
+      </button>
+      <!-- <div class="mahro-card-container flex-row flex-center-main col s12">
+        <div class="mahro-card">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div> -->
+    </div>
+    <div class="pop-up-container">
+      <div class="pop-up">
+        <span class="close"><i class="material-icons waves-effect">close</i></span>
+        <p class="title">Unknown location</p>
+        <p class="content">
+          Unknown Info
+        </p>
+      </div>
+    </div>    
+  </div>
+  <nav class="col s12">
+    <div class="flex-row flex-center-both nav-button col s6">
+      <a href="/"><i class="material-icons waves-effect">home</i></a>
+    </div>
+    <!-- <div class="flex-row flex-center-both nav-button col s3">
+      <i class="material-icons waves-effect">star</i>
+    </div> -->
+    <div class="flex-row flex-center-both nav-button col s6">
+      <a href="/details"><i class="material-icons waves-effect">person</i></a>
+    </div>
+    <!-- <div class="flex-row flex-center-both nav-button col s4">
+      <a href="about.html"><i class="material-icons waves-effect">more_vert</i></a>
+    </div> -->
+  </nav>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpXWrGbuB4fPx6QELCLQmz3yATYeqtwcA"></script>
+  <script type="text/javascript" src="../javascripts/app.js"></script>
+</body>
+</html>

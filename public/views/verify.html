@@ -1,0 +1,38 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <title>Tour Magica</title>
+  
+  <link rel="manifest" href="./manifest.json">
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  
+
+  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link href="../css/materialize.min.css" rel="stylesheet"/>
+  <link href="../css/styles.css" rel="stylesheet"/>
+  
+  <!-- JS libs -->
+  <script type="text/javascript" src="../javascripts/jquery.min.js"></script>
+  <script type="text/javascript" src="../javascripts/materialize.js"></script>
+
+  <script type="text/javascript" src="../javascripts/app.js"></script>
+</head>
+
+<body class="row">
+  <div class="login-container flex-col flex-center-both col s12">
+    <p class="title flex-col flex-center-both col s12">Tour Magica</p>
+    <form class="flex-col flex-center-both login col s12" method="post" action="api/verify">
+      <div class="input-field col s12">
+        <label for="otp">OTP</label>
+        <input type="number" name="otp" min="0000" max="9999" required>
+      </div>
+      <button class="btn waves-light waves-effect col s12" type="submit">Continue</button>
+    </form>
+  </div>
+</body>
+</html>

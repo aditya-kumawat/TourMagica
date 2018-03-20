@@ -1,0 +1,394 @@
+* {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+/*
+	Font includes - starts here
+*/
+	@font-face {
+	  src: url("../font/MuseoSans_500.otf");
+	  font-family: "Museo Sans"; 
+	}
+
+	@font-face {
+		src: url("../font/Pacifico.ttf");
+		font-family: "Pacifico";
+	}
+/*
+	Font includes - ends here
+*/
+
+body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: #615d8c;
+	letter-spacing: 1px;
+	font-family: "Museo Sans";
+}
+
+/*
+	Helper classes - starts here
+*/
+
+	.flex-row {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	}
+
+	.flex-col {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	}
+
+	.flex-center-main {
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	}
+
+	.flex-center-cross {
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	}
+
+	.flex-center-both {
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	}
+
+	.flex-space-around {
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	}
+
+	.flex-space-between {
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	}
+
+	.flex-grow {
+	-webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
+	}
+
+	.flex-wrap {
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	}
+/*
+	Helper classes - ends here
+*/
+
+/*
+	Login - starts here
+*/
+	.login-container {
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1000;
+		justify-content: space-around;
+		background: #615d8c;
+		background: -webkit-linear-gradient(-150deg, #cb98cf, #a79bd5, #5d65a2, #313758);
+		background: linear-gradient(-150deg, #cb98cf, #a79bd5, #5d65a2, #313758);
+	}
+
+	.login-container p.title {
+		font-size: 24px;
+    color: white;
+    /*text-transform: uppercase;*/
+    letter-spacing: 2px; 
+    flex-grow: 2;
+    font-family: "Pacifico"
+	}
+
+	.login-container form {
+		width: 100%;
+		padding: 0 15vw !important;
+		color: black !important;
+		margin-bottom: 5vh !important;
+	}
+
+	.login-container  .input-field label{
+		font-size: 16px;
+		color: white;
+	}
+
+	.login-container  form  > * {
+		margin-bottom: 3vh !important;		
+	}
+
+	.login-container form > input {
+		width: 100%;
+	}
+	
+	.login-container form > button.btn {
+		width: 70%;
+		min-height: 48px;
+		background-color: transparent;
+		border-radius: 2px;
+		border: 2px solid white;
+		text-transform: capitalize;
+	}
+
+	.details-container {
+		justify-content: center;
+		background: #615d8c;
+	}
+
+	.details-container p.title {
+		margin-bottom: 8vh !important;
+		flex-grow: initial;
+	}
+
+	input[type="text"],
+	input[type="number"],
+	input[type="email"] {
+		font-family: "Museo Sans";
+		font-size: 18px;
+		color: white;
+		border-bottom: 1px solid white;
+		margin-bottom: 1vh !important;
+	}
+
+	input[type="text"]:focus:not([readonly]),
+	input[type="number"]:focus:not([readonly]),
+	input[type="email"]:focus:not([readonly]) {
+		border-bottom: 1px solid white;
+		box-shadow;
+	}
+
+/*
+	Login - ends here
+*/
+
+/*
+	Main-content - start here
+*/
+	.main-content {
+		position: relative;
+		width: 100%;
+		height: 100vh;
+		padding-bottom: 56px !important;
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+
+	.map {
+		width: 100%;
+		height: 100%;
+		background-color: white;
+	}
+	
+/*
+	Main content - ends here
+*/
+
+/*
+	Nav - starts here
+*/
+	nav {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 56px;
+		z-index: 1000;
+		background-color: #3cddb8;
+		box-shadow: 0 -2px 5px 0 rgba(255, 255, 255, 0.16), 0 -2px 10px 0 rgba(255, 255, 255, 0.12);
+	}
+
+	nav i {
+		height: 54px;
+		width: 56px;
+		text-align: center;
+		border-radius: 999em;
+	}
+/*
+	Nav - ends here
+*/
+
+/*
+	App Generic Styles - starts here
+*/
+	.map-container {
+		width: 100%;
+		height: 100%;
+		background-color: white;
+	}
+
+	#map {
+		width: 100%;
+		height: 100%;
+	}
+
+	.mahro-card-container {
+		position: relative;
+		width: 100%;
+		height: auto;
+	}
+
+	.mahro-card {
+		position: relative;
+		width: 80%;
+		height: auto;
+		height: 300px;
+		z-index: 12;
+		background-color: transparent;
+		padding: 10px !important;
+	}
+	
+	.mahro-card:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0%;
+		width: 100%;
+		min-height: 300px;
+		height: 100%;
+		background-color: #737a9f;
+		opacity: 0.8;
+		z-index: -1;
+		border-radius: 2px;
+		filter: blur(2px);
+	}
+
+	.mahro-card .title,
+	.pop-up .title {
+		position: relative;
+		width: 100%;
+		font-size: 20px;
+		margin: 2vh 0 !important;
+	}
+
+	.mahro-card .title {
+		color: white;
+	}
+
+	.pop-up .title {
+		color: #615d8b;
+	}
+
+	.mahro-card .title:before,
+	.pop-up .title:before {
+		position: absolute;
+		content: "";
+		left: 50%;
+		bottom: -2px;
+		width: 15vw;
+		height: 2px;
+		border-radius: 2px;
+		transform: translateX(-50%);
+	}
+
+	.mahro-card .title:before {
+		background-color: white;
+	}
+
+	.pop-up .title:before {
+		background-color: #615d8b;
+	}
+
+	.pop-up-container {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 55vh;
+		z-index: 60;
+		overflow: hidden; 
+		background-color: white;
+		will-change: transform;
+		transform: translateY(100%);
+		transition: transform 0.5s;
+		box-shadow: 0 -2px 5px 0 rgba(0, 0, 0, 0.16), 0 -2px 10px 0 rgba(0, 0, 0, 0.12);
+	}
+
+	.pop-up-container.open {
+		transform: translateY(0%);
+	}
+
+	.pop-up {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		padding-top: 2vh !important;
+	}
+
+	.pop-up .title {
+		text-align: center;
+	}
+
+	.pop-up .content {
+		width: 100%;
+		height: calc(100% - 40px);
+		overflow-x: hidden;
+		overflow-y: auto;
+		font-size: 18px;
+		padding: 2vh 8vw !important; 
+	}
+
+	.mahro-card .close, 
+	.pop-up .close {
+		position: absolute;
+		top: 2vh;
+		right: 2vh;
+		width: 40px;
+		font-size: 30px;
+		height: 40px;
+		cursor: pointer;
+	}
+
+	.mahro-card .close > i, 
+	.pop-up .close > i {
+		font-size: 34px;
+	}
+/*
+	App Generic Styles - ends here
+*/
+
+.get-a-tour {
+	position: absolute;
+	left: 10px;
+	bottom: 100px;
+	padding: 0vh 3vw !important;
+	background-color: white;
+	color: #615d8c;
+	font-size: 14px;
+	z-index: 5;
+}
+
+.get-info {
+	position: absolute;
+	left: 140px;
+	bottom: 100px;
+	padding: 0vh 3vw !important;
+	background-color: white;
+	color: #615d8c;
+	font-size: 14px;
+	z-index: 5;
+}
